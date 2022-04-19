@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Vertical Slider</title>
+	</head>
+	<body>
+		<div class="slider-container">
+			<!-- The first div of left side will go with the last div of the right slide -->
+			<div class="left-slide">
+				<div style="background-color: #fd3555">
+					<h1>Sand Dunes</h1>
+					<p>all sands</p>
+				</div>
+				<div style="background-color: #2a86ba">
+					<h1>Bluuue sea</h1>
+					<p>with waves</p>
+				</div>
+				<div style="background-color: #252e33">
+					<h1>Lonely Beach</h1>
+					<p>in the wildness</p>
+				</div>
+				<div style="background-color: #ffb866">
+					<h1>Snowy Mountain</h1>
+					<p>in the sunset</p>
+				</div>
+			</div>
+			<div class="right-slide">
+				<div style="background-image: url(../img/img5.png)"></div>
+				<div style="background-image: url(../img/img4.png)"></div>
+				<div style="background-image: url(../img/img7.png)"></div>
+				<div style="background-image: url(../img/img6.png)"></div>
+			</div>
+			<div class="action-buttons">
+				<button class="down-button">
+					<i class="fas fa-arrow-down"></i>
+				</button>
+				<button class="up-button">
+					<i class="fas fa-arrow-up"></i>
+				</button>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
