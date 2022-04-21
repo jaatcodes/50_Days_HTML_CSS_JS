@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #2a2a72;
+    --secondary-color: #4c2885;
+}
+html.dark {
+    --primary-color: rgba(30, 29, 29, 0.905);
+    --primary-color: #040407;
+    --secondary-color: rgb(25, 20, 20);
+    --secondary-color: #232325;
+}
+body {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.toggle-mode {
+    position: absolute;
+    top: 0.5rem;
+}
+.toggle-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.4),
+        0 15px 40px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 2rem;
+    outline: none;
+    transition: all 0.3s ease-in;
+}
+.toggle-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(0.95);
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+}
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.4),
+        0 15px 40px rgba(0, 0, 0, 0.2);
+}
+.user-form input::placeholder {
+    color: #bbb;
+}
+.user-form input:focus {
+    outline: none;
+}
+.card {
+    max-width: 800px;
+    background-color: var(--secondary-color);
+    border-radius: 1.25rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.4),
+        0 15px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--primary-color);
+}
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+.user-info h2 {
+    margin-top: 0;
+}
+.user-info p {
+    margin: 2rem 0;
+}
+.user-info ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+    margin: 2rem 0;
+}
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.repo {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        font-size: 10px;
+        padding: 0.25rem 1rem;
+    }
+    .card {
+        max-width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form {
+        max-width: 80vw;
+    }
+}
