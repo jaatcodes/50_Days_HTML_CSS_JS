@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: cursive, monospace, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.title {
+    margin: 10px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* as each image is of 300px so only 3 images will be in the container */
+    max-width: 1000px;
+}
+.container img {
+    object-fit: cover;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.rows-input {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    text-align: center;
+    gap: 0.5rem;
+    background: aliceblue;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.rows-input p {
+    font-size: 1.15rem;
+    color: #333;
+}
+.rows-input button,
+.rows-input input {
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 20px;
+    font-family: inherit;
+}
+.rows-input button {
+    background-color: #000;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.rows-input button:hover {
+    transform: scale(0.95);
+}
+.rows-input.hide {
+    display: none;
+}
